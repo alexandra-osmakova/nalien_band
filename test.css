@@ -1,0 +1,567 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #F7F8F9; 
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    background: url('https://pp.userapi.com/c630421/v630421440/39fff/lCeJT-kHleU.jpg') center center;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.header .word, .header .cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+  
+.cover {
+    background: #000;
+    opacity: .5;
+}
+
+
+.nav {
+    width: 60%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_item {
+    cursor: pointer;
+    padding: 1vmax;
+    margin: 0 1vmax;
+    height: 3rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    border: 0.5px solid rgba(255, 255, 255, 0);
+}
+
+.nav_item:hover {
+    border: 0.5px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    transition: all .3s ease;
+}
+
+.nav_item {
+    margin-bottom: 3rem;
+}
+  
+.links_bar {
+    color: #33393e;
+    visibility: hidden;
+    position: fixed;
+    right: 1.5vw;
+    bottom: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links_bar.removed {
+    visibility: visible;
+}
+
+.link_item {
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inst:hover {
+    background: linear-gradient(to bottom left, #A343A1, #F99C48);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vk:hover {
+    background: #55779A;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.soundcloud:hover {
+    background: #FC5520;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.telegram:hover {
+    background: #3daedf;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.youtube:hover {
+    background: #fc0d1c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link_item a {
+    text-decoration: none;
+    color: #33393E;
+}
+
+
+.news_grid {
+    width: 80%;
+    margin: 0 auto 20rem;
+    padding-top: 10vmax;
+}
+
+.back_to_top {
+    display: none;
+    cursor: pointer;
+}
+
+.back_to_top.fixed {
+    background-image: -webkit-linear-gradient(top, #33393E, #505a62);
+    background-image: -moz-linear-gradient(top, #33393E, #505a62);
+    background-image: -ms-linear-gradient(top, #33393E, #505a62);
+    background-image: -o-linear-gradient(top, #33393E, #505a62);
+    background-image: linear-gradient(to bottom, #33393E, #505a62);
+    color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    opacity: 0.2;
+    display: block;
+    position: fixed;
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 1.5vw;
+    bottom: 35vh;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2.5rem;
+    font-size: 2rem;
+    -webkit-transition: top 1s ease-out 0.5s;
+    -moz-transition: top 1s ease-out 0.5s;
+    -o-transition: top 1s ease-out 0.5s;
+    transition: top 1s ease-out 0.5s;
+      
+}
+
+.back_to_top:hover {
+    opacity: 0.4;
+}
+
+
+article {
+ -moz-column-width: 20rem;
+ -webkit-column-width: 20rem;
+ -moz-column-gap: 0.5rem;
+ -webkit-column-gap: 0.5rem; 
+}
+
+.news_grid section {
+cursor: pointer;
+ display: inline-block;
+ margin:  0.5rem 0.3rem;
+ padding:  1rem;
+ background-color: white;
+ box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.news_grid section:hover {
+    opacity: .75;
+    
+}
+
+
+.news_grid p {
+font-size: 1.2rem;
+line-height: 1.5rem;
+ text-align:  left;
+ font-weight: 300;
+}
+
+.news_grid img {
+  width: 100%;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.contacts {
+    margin-top: 15rem;
+    width: 100%;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    background-image: -webkit-linear-gradient(top, #33393E, #505a62);
+    background-image: -moz-linear-gradient(top, #33393E, #505a62);
+    background-image: -ms-linear-gradient(top, #33393E, #505a62);
+    background-image: -o-linear-gradient(top, #33393E, #505a62);
+    background-image: linear-gradient(to bottom, #33393E, #505a62);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts_item {
+    color:  white;
+    cursor: pointer;
+    width: 25%;
+    height: 10vmax;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.contacts_item span {
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.12),0px 2px 2px rgba(0,0,0,0.24);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.insta_contact:hover {
+    transition: all .3s ease;
+    color: white;
+    background: linear-gradient(to bottom left, #A343A1, #F99C48);
+}
+
+.vk_contact:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #55779A;
+}
+
+.soundcloud_contact:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #FC5520;
+}
+
+.youtube_contact:hover {
+    transition: all .3s ease;
+    color: white;
+    background-color: #fc0d1c;
+}
+
+.concert_day {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.concert_day_section {
+    width: 100%;
+    display: flex;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    background-color: #e6e6e6;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    box-sizing: border-box;
+}
+
+
+.concert_month {
+    width: 15%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 4rem 1rem;
+    box-sizing: border-box;
+}   
+
+.concert_month h2 {
+    font-size: 5rem;
+    box-sizing: border-box;
+    font-weight: 300;
+    -moz-transform: rotate(-90deg); 
+    -ms-transform: rotate(-90deg); 
+    -webkit-transform: rotate(-90deg); 
+    -o-transform: rotate(-90deg); 
+    transform: rotate(-90deg);    
+}
+
+.events {
+    width: 85%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+.concert_event {
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+}
+
+
+.concert_event img {
+    width: 30%;
+    height: 100%;
+    margin: 1rem 2rem 1rem 1rem;
+    border: 1px solid #e6e6e6;
+}
+
+.concert_event p {
+    margin: 1rem auto;;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.concert_event span {
+    font-weight: 400;
+}
+
+.wrap {
+    width: 100%;
+    padding: 5rem 0 10rem;
+}
+
+.media {
+    margin: 0 auto;
+    padding: 10rem 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.media_box {
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.12),0px 2px 2px 0px rgba(0,0,0,0.24);
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sound {
+    width: 30%;
+    height: 23rem;
+}
+
+.video {
+    width: 60%;
+    height: 23rem;
+}
+
+.nav_item a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (min-width: 2600px) and (max-width: 3000px) {
+    html {
+        font-size: 32px;
+    }
+
+    article {
+        -moz-column-width: 30rem;
+        -webkit-column-width: 30rem;
+        -moz-column-gap: 0.5rem;
+        -webkit-column-gap: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2600px) {
+    html {
+        font-size: 28px;
+    }
+
+    article {
+        -moz-column-width: 30rem;
+        -webkit-column-width: 30rem;
+        -moz-column-gap: 0.5rem;
+        -webkit-column-gap: 0.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1640px) and (max-width: 2000px) {
+    html {
+        font-size: 18px;
+    }
+    article {
+        -moz-column-width: 25rem;
+        -webkit-column-width: 25rem;
+        -moz-column-gap: 0.5rem;
+        -webkit-column-gap: 0.5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1180px) and (max-width: 1420px) {
+    html {
+        font-size: 15px;
+    }
+
+    .concert_day {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 950px) and (max-width: 1180px) {
+    html {
+        font-size: 14px;
+    }
+
+    .concert_day {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px) {
+    html {
+        font-size: 14px;
+    }
+
+    .concert_day {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    .concert_day {
+        width: 90%;
+    }
+
+    .header {
+        height: 50%;
+    }
+
+    .links_bar {
+        display: none !important;
+    }
+
+    .video, .sound {
+        width: 100%;
+    }
+
+    .video {
+        margin-top: 1.5rem;
+    }
+
+    .nav_item, .contacts_item span {
+        font-size: 1.5rem;
+    }
+
+    .concert_event img {
+        display: none;
+    }
+
+    .concert_month {
+        margin: 1.5rem;
+    }
+
+    .concert_month h2 {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 580px) {
+
+    html {
+        font-size: 14px;
+    }
+
+
+    .header {
+        height: 50%;
+    }
+
+    .concert_day {
+        width: 90%;
+    }
+
+    .links_bar{
+        display: none !important;
+    }
+
+
+    .video, .sound {
+        width: 100%;
+    }
+
+    .video {
+        margin-top: 1.5rem;
+    }
+
+    .concert_event img {
+        display: none;
+    }
+
+    .concert_month {
+        margin: 1.5rem;
+    }
+
+    .concert_month h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 440px) {
+    html {
+        font-size: 14px;
+    }
+
+    .header {
+        height: 50%;
+    }
+
+    .links_bar{
+        display: none !important;
+    }
+
+    .concert_day {
+        width: 95%;
+    }
+
+    .video, .sound {
+        width: 100%;
+    }
+
+    .video {
+        margin-top: 1.5rem;
+    }
+
+    .nav_item, .contacts_item span {
+        font-size: 1.5rem;
+    }
+
+    .concert_event img {
+        display: none;
+    }
+
+    .concert_month {
+        margin: 1.5rem;
+    }
+
+    .concert_month h2 {
+        font-size: 3rem;
+    }
+}
+
